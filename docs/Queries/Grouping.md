@@ -64,7 +64,7 @@ Since Tasks 4.0.0, **[[Custom Grouping|custom grouping]] by status** is now poss
 <!-- placeholder to force blank line before included text --><!-- include: CustomGroupingExamples.test.other_properties_task.isDone_docs.approved.md -->
 
 ```javascript
-group by function task.isDone ? "Action Required" : "Nothing To Do"
+group by function task.isDone ? "Nothing To Do" : "Action Required"
 ```
 
 - Use JavaScript's ternary operator to choose what to do for true (after the ?) and false (after the :) values.
